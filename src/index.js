@@ -1,16 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const x = 30;
-let text = "Less than 20";
-if(x>20){
-  text = "More than 20"
+class Car extends React.Component{
+  render(){
+    return <h2>This is my car </h2>
+  }
 }
-const myElement = (
-<>
-<p>{text}</p>
-</>
-);
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(myElement);
+root.render(
+  <Car />
+);
