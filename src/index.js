@@ -1,22 +1,16 @@
 import React from "react";
-import ReactDom from "react-dom/client";
+import ReactDOM from "react-dom/client";
 
-const element = (
+const x = 30;
+let text = "Less than 20";
+if(x>20){
+  text = "More than 20"
+}
+const myElement = (
+<>
+<p>{text}</p>
+</>
+);
 
-  <table>
-    <tr>
-      <th>Name</th>
-      <th>Phone</th>
-    </tr>
-    <tr>
-      <td>Oriel</td>
-      <td>0758997669</td>
-    </tr>
-  </table>
-)
-
-const root = ReactDom.createRoot(document.getElementById('root'));
-
-root.render(
-  element
-)
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(myElement);
